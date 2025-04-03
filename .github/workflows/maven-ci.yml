@@ -54,6 +54,8 @@ jobs:
   # Uploads dependency graph to GitHub to receive Dependabot alerts 
   update_dependence_graph:
 
+    needs: maven_test
+
     runs-on: ubuntu-latest
 
     permissions:
@@ -61,9 +63,12 @@ jobs:
 
     steps:
 
-    # Checkout
-    - name: Checkout repository
-      uses: actions/checkout@v3
+    - name: Restore cached build
+      uses: actions/cache@v3
+      with:
+        key: cached-build-${{github.sha}}
+        path: .
+
 
     # https://github.com/marketplace/actions/maven-dependency-tree-dependency-submission
     - name: Update dependency graph
