@@ -4,7 +4,7 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>io.github.dlo21</groupId>
+  <groupId>io.github.wonsunahn</groupId>
   <artifactId>cs1632-cicd-pipelines-dlo21</artifactId>
   <version>1.0</version>
   <packaging>jar</packaging>
@@ -39,7 +39,7 @@
     <repository>
       <id>github</id>
       <name>GitHub Apache Maven Packages</name>
-      <url>https://github.com/CS1632-Spring-2025/supplementary-exercise-4-ci-cd-pipelines-DanielO-M05</url>
+      <url>https://maven.pkg.github.com/CS1632-Spring-2025/supplementary-exercise-4-ci-cd-pipelines-DanielO-M05</url>
     </repository>
   </distributionManagement>
 
